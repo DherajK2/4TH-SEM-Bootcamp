@@ -1,0 +1,7 @@
+Component = ui + states + props + [imports css/image/other components] + data binding + event Binding
+
+what is React?
+Single page Application
+Node-based front end ui framework
+
+

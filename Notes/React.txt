@@ -7,3 +7,22 @@ Node-based front end ui framework
 
 npm ---> node package manager(Extension, utilities ((access the react js software)))
 
+to create 
+$npm create vite@latest --template react
+
+(Using DownArrowKey)
+--->select React
+--->Select JavaScript
+
+
+$cd react or $npm create vite@latest --template react
+
+
+$npm install
+$npm run dev
+
+Press Control and click on http://localhost:5173/
+
+
+
+

@@ -1,0 +1,5 @@
+Do the GreetApp
+
+Having a Tertiary nav-bar
+Have href links for hello, hi, goodmorning
+Display the same as Hello World, Hi World , Good Morning World

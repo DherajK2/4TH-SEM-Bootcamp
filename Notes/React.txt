@@ -1,7 +1,9 @@
 Component = ui + states + props + [imports css/image/other components] + data binding + event Binding
 
+Prps(Parent component passes to Child Component)--> Example tables, containers
+
 what is React?
-Single page Application
+Single page Application (SPA)
 Node-based front end ui framework
 
 DOM(Document Object Model))(Virtual)---> Only changed component will be rendered or loaded 
@@ -25,6 +27,12 @@ $npm install
 $npm run dev
 
 Press Control and click on http://localhost:5173/
+
+
+
+Go to public--> src--> Create Pizza folder , Create header folder 
+Pizza folder---> PizzaList.jsx , PizzaView.jsx , PizzaCreate.jsx
+header folder --> Create PageHolder.jsx
 
 
 

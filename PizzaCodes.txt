@@ -1,0 +1,70 @@
+import { useEffect, useState } from 'react';
+import PageHeader from "../header/PageHeader";
+import axios from 'axios';
+
+function PizzaList() {
+    const [pizzas, setPizzas] = useState([{ID: '', Name: '', Size: '', Price: '', Category: ''}]);
+
+
+    const readAllPizzas = async () => {
+        const baseUrl = "https://localhost:8080";  
+        try {
+            const response = await axios.get(`${baseUrl}/pizzas`);  
+            const queriedPizzas = response.data;  
+            setPizzas(queriedPizzas);  
+        } catch (error) {
+            alert('Server Error');  
+        }
+    };
+
+    useEffect(() => {
+        readAllPizzas();
+    }, []); 
+
+    return (
+        <>
+            <PageHeader />
+            <h3>List Of Pizza 🍕</h3>
+            <div className="container">
+                <table className="table table-striped table-bordered">
+                    <thead className="table-dark">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Size (in cm)</th>
+                            <th scope="col">Price (in rupees)</th>
+                            <th scope="col">Category</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {pizzas.map((pizza) => (
+                            <tr key={pizza.ID}>
+                                <th scope="row">{pizza.ID}</th>
+                                <td>{pizza.Name}</td>
+                                <td>{pizza.Size}</td>
+                                <td>{pizza.Price}</td>
+                                <td>{pizza.Category}</td>
+                                <td>
+                                    <a
+                                        href={`/pizzas/view/${pizza.ID}`}
+                                        className="btn btn-success"
+                                    >
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        </>
+    );
+}
+
+export default PizzaList;
+
+
+
+
+

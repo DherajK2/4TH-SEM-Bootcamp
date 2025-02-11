@@ -4,6 +4,9 @@ what is React?
 Single page Application
 Node-based front end ui framework
 
+DOM(Document Object Model))(Virtual)---> Only changed component will be rendered or loaded 
+
+
 
 npm ---> node package manager(Extension, utilities ((access the react js software)))
 

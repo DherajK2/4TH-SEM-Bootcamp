@@ -1,1 +1,13 @@
 Mixture of C and Python
+
+Create client and server 
+
+Create raect file in client
+and in server folder main.go
+
+
+
+$go get github.com/gin
+$go mod init test.com/a-apis
+
+

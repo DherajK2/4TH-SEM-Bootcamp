@@ -1,0 +1,7 @@
+Client ---> BOOTSTRAP, REACT , 
+
+Server ---> Go Lang,
+
+Database--> MangoDB(JSON)
+
+Api - Postmnan/ ThunderClient

@@ -20,7 +20,7 @@ $npm create vite@latest --template react
 --->Select JavaScript
 
 
-$cd react or $npm create vite@latest --template react
+$cd react or $npm create vite@latest . --template react
 
 
 $npm install

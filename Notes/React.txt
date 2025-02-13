@@ -36,4 +36,19 @@ header folder --> Create PageHolder.jsx
 
 
 
+After Coding in all the Files 
+
+
+
+$cd server
+$ go mod init test.com/a-apis
+$ go mod tidy
+(After doing this automatically go.mod and go.sum placed in server folder
+
+$ go get github.com/gin-gonic/gin
+$ go run main.go
+
+Install Thunder Client extension in VS code
+
+
 

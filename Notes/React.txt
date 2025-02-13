@@ -49,6 +49,35 @@ $ go get github.com/gin-gonic/gin
 $ go run main.go
 
 Install Thunder Client extension in VS code
+in New Request 
+
+Paste this link in the 
+http://localhost:8080/pizzas
+
+
+In Body 
+paste 
+
+  "Id": "001",
+  "Name": "Papperoni Pizza",
+  "Size": 16,
+  "Price": 500.0,
+  "Category": "Fast Delivery"
+  }
+All Parameters should be in double quotes
+
+Now send requests as GET, PUT, DELETE etc
+
+DELETE by Id
+
+
+
+
+
+
+
+
+
 
 
 
